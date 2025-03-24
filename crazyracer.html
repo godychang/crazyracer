@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Racer - Exciting 2-Player Racing Game Online</title>
+    <meta name="description" content="Play Crazy Racer online - an adrenaline-pumping 2-player racing game with challenging tracks and exciting gameplay. Race against friends now!">
+    <link rel="canonical" href="https://crazyracer.xyz">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            red: '#FF3B30',
+                            green: '#34C759',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7',
+                            darkgray: '#1C1C1E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 640px) {
+            .game-container {
+                padding-bottom: 75%; /* Adjusted for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-lightgray dark:bg-apple-darkgray text-gray-800 dark:text-white">
+    <header class="bg-apple-blue text-white py-6 px-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">Crazy Racer</h1>
+            <p class="text-center mt-2 text-lg">The ultimate 2-player racing experience that will test your driving skills!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-10">
+            <div class="game-container rounded-lg shadow-lg overflow-hidden">
+                <iframe src="https://www.onlinegames.io/games/2022/unity3/2-player-crazy-racer/index.html" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Game Overview</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <p class="mb-4">Crazy Racer is an exciting multiplayer racing game where you can challenge your friends in intense head-to-head competitions. With stunning graphics and responsive controls, this game offers an immersive racing experience right in your browser.</p>
+                <p>Race through various challenging tracks, unlock new vehicles, and prove you're the ultimate racer!</p>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">How to Play</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Player 1 Controls:</h3>
+                        <ul class="list-disc pl-5">
+                            <li>W - Accelerate</li>
+                            <li>S - Brake/Reverse</li>
+                            <li>A - Turn Left</li>
+                            <li>D - Turn Right</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Player 2 Controls:</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Arrow Up - Accelerate</li>
+                            <li>Arrow Down - Brake/Reverse</li>
+                            <li>Arrow Left - Turn Left</li>
+                            <li>Arrow Right - Turn Right</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Game Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Multiplayer Mode</h3>
+                    <p>Challenge your friends in exciting split-screen races and determine who's the best driver!</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Challenging Tracks</h3>
+                    <p>Navigate through various tracks with unique obstacles and exciting shortcuts.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Realistic Physics</h3>
+                    <p>Experience realistic car handling and physics that make every race unpredictable and fun.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Tips & Tricks</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Master the drift technique to take corners at high speed</li>
+                    <li>Look for shortcuts on each track to gain an advantage</li>
+                    <li>Time your acceleration out of corners for maximum speed</li>
+                    <li>Use the brake strategically to maintain control in tight turns</li>
+                    <li>Practice each track to learn the optimal racing line</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-blue text-white py-6 px-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Crazy Racer. All rights reserved.</p>
+            <p class="mt-2">Experience the thrill of racing at <a href="https://crazyracer.xyz" class="underline">crazyracer.xyz</a></p>
+        </div>
+    </footer>
+</body>
+</html>
