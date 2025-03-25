@@ -1,62 +1,142 @@
-# Crazy Racer 游戏网站
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Racer - Exciting 2-Player Racing Game Online</title>
+    <meta name="description" content="Play Crazy Racer online - an adrenaline-pumping 2-player racing game with challenging tracks and exciting gameplay. Race against friends now!">
+    <link rel="canonical" href="https://crazyracer.xyz">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            red: '#FF3B30',
+                            green: '#34C759',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7',
+                            darkgray: '#1C1C1E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 640px) {
+            .game-container {
+                padding-bottom: 75%; /* Adjusted for mobile */
+            }
+        }
+    </style>
+</head>
+<body class="bg-apple-lightgray dark:bg-apple-darkgray text-gray-800 dark:text-white">
+    <header class="bg-apple-blue text-white py-6 px-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-center">Crazy Racer</h1>
+            <p class="text-center mt-2 text-lg">The ultimate 2-player racing experience that will test your driving skills!</p>
+        </div>
+    </header>
 
-这是一个基于HTML和Tailwind CSS构建的Crazy Racer在线游戏网站，提供了良好的PC和移动端适配性，采用苹果风格的配色方案。
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-10">
+            <div class="game-container rounded-lg shadow-lg overflow-hidden">
+                <iframe src="https://www.onlinegames.io/games/2022/unity3/2-player-crazy-racer/index.html" allowfullscreen></iframe>
+            </div>
+        </section>
 
-## 网站特点
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Game Overview</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <p class="mb-4">Crazy Racer is an exciting multiplayer racing game where you can challenge your friends in intense head-to-head competitions. With stunning graphics and responsive controls, this game offers an immersive racing experience right in your browser.</p>
+                <p>Race through various challenging tracks, unlock new vehicles, and prove you're the ultimate racer!</p>
+            </div>
+        </section>
 
-- **响应式设计**：完美适配PC和移动设备
-- **苹果风格UI**：使用苹果典型色系和设计语言
-- **SEO优化**：包含适当的标题结构和元数据
-- **游戏集成**：通过iframe无缝集成在线游戏
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">How to Play</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Player 1 Controls:</h3>
+                        <ul class="list-disc pl-5">
+                            <li>W - Accelerate</li>
+                            <li>S - Brake/Reverse</li>
+                            <li>A - Turn Left</li>
+                            <li>D - Turn Right</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Player 2 Controls:</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Arrow Up - Accelerate</li>
+                            <li>Arrow Down - Brake/Reverse</li>
+                            <li>Arrow Left - Turn Left</li>
+                            <li>Arrow Right - Turn Right</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-## 技术栈
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Game Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Multiplayer Mode</h3>
+                    <p>Challenge your friends in exciting split-screen races and determine who's the best driver!</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Challenging Tracks</h3>
+                    <p>Navigate through various tracks with unique obstacles and exciting shortcuts.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-apple-green">Realistic Physics</h3>
+                    <p>Experience realistic car handling and physics that make every race unpredictable and fun.</p>
+                </div>
+            </div>
+        </section>
 
-- HTML5
-- Tailwind CSS (通过CDN加载)
-- 响应式设计
-- 语义化HTML
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-apple-blue">Tips & Tricks</h2>
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Master the drift technique to take corners at high speed</li>
+                    <li>Look for shortcuts on each track to gain an advantage</li>
+                    <li>Time your acceleration out of corners for maximum speed</li>
+                    <li>Use the brake strategically to maintain control in tight turns</li>
+                    <li>Practice each track to learn the optimal racing line</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-## 文件结构
-
-- `game1.html` - 主网页文件，包含所有游戏内容和样式
-
-## 网站内容
-
-网站包含以下主要部分：
-
-1. **头部区域**：游戏标题和简短介绍
-2. **游戏区域**：嵌入式iframe展示游戏内容
-3. **游戏概述**：游戏的基本介绍
-4. **操作指南**：详细的游戏控制说明
-5. **游戏特色**：游戏的主要功能和亮点
-6. **游戏技巧**：帮助玩家提升游戏体验的小贴士
-7. **页脚**：版权信息和网站链接
-
-## 部署说明
-
-1. 将`game1.html`文件上传到您的网站服务器
-2. 确保域名`crazyracer.xyz`已正确配置并指向该文件
-3. 网站即可通过`https://crazyracer.xyz`访问
-
-## SEO信息
-
-- **主要关键词**：Crazy Racer
-- **标题标签**：包含H1和多个H2标签
-- **Canonical URL**：已设置为`https://crazyracer.xyz`
-- **语言**：英语
-
-## 浏览器兼容性
-
-网站兼容所有现代浏览器，包括但不限于：
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## 维护与更新
-
-如需更新网站内容或样式，直接编辑`game1.html`文件即可。Tailwind CSS通过CDN加载，无需额外的构建步骤。
-
-## 版权信息
-
-© 2023 Crazy Racer. 保留所有权利。
+    <footer class="bg-apple-blue text-white py-6 px-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Crazy Racer. All rights reserved.</p>
+            <p class="mt-2">Experience the thrill of racing at <a href="https://crazyracer.xyz" class="underline">crazyracer.xyz</a></p>
+        </div>
+    </footer>
+</body>
+</html>
